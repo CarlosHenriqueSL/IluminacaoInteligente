@@ -1,3 +1,17 @@
+/*
+ *  Por: Carlos Henrique Silva Lopes
+ *  Data: 03-06-2025
+ *
+ *  Iluminacao de comodos usando comunicacao via MQTT
+ *
+ *  Descrição: O sistema simula a iluminacao de comodos em uma casa usando MQTT e o aplicativo IoT MQTT Panel.
+ *  Foram usados 5 comodos para simulacao: Sala, Quarto 1, Quarto 2, Cozinha e Banheiro.
+ *  A iluminacao eh controlada por 5 sliders, um para cada comodo, no app IoT MQTT Panel.
+ *  A matriz de LEDs acende suas linhas conforme a iluminacao do comodo atual.
+ *  O display ssd1306 exibe a porcentagem exata, bem como o comodo atual.
+ */
+
+
 #include "pico/stdlib.h"     // Biblioteca da Raspberry Pi Pico para funções padrão (GPIO, temporização, etc.)
 #include "pico/cyw43_arch.h" // Biblioteca para arquitetura Wi-Fi da Pico com CYW43
 #include "pico/unique_id.h"  // Biblioteca com recursos para trabalhar com os pinos GPIO do Raspberry Pi Pico
